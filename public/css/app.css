@@ -1,0 +1,19 @@
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+#dashboard-button:hover {
+    cursor: pointer;
+    color: rgb(7, 107, 238) !important;
+}
+
+#student-button:hover {
+    cursor: pointer;
+    color: rgb(7, 107, 238) !important;
+}
+
+#city-button:hover {
+    cursor: pointer;
+    color: rgb(7, 107, 238) !important;
+}
+
