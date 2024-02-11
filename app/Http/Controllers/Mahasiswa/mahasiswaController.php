@@ -72,6 +72,7 @@ class mahasiswaController extends Controller
             "city_id" => $validated['city'],
             "nim" => $validated['nim'],
             "name" => $validated['name'],
+            "sex" => $validated['gender'],
             "date_of_birth" => $validated['date'],
             "address" => $validated['address']
         ];

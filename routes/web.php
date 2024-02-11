@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\City\CityController;
+use App\Http\Controllers\ExportStudentExcel;
 use App\Http\Controllers\Mahasiswa\mahasiswaController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,7 @@ Route::prefix('admin')->middleware('signInMiddleware')->group(function () {
         Route::get("/{id}/editData", [mahasiswaController::class, 'editData'])->name('editDataMahasiswa');
         Route::post("/{id}/submitedit", [mahasiswaController::class, 'submitEditData'])->name('submitEditDataMahasiswa');
         Route::post("/{id}/delete", [mahasiswaController::class, 'delete'])->name('deleteMahasiswa');
+        Route::get('/export', [ExportStudentExcel::class, 'export'])->name('export_excel');
     });
     Route::prefix('city')->group(function () {
         Route::get('/', [CityController::class, 'index'])->name('GetDataCity');

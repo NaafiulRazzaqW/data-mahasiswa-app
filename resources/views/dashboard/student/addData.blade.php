@@ -21,12 +21,12 @@
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">NAME</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" name="name"
-                            aria-describedby="emailHelp" required>
+                            aria-describedby="emailHelp" value="{{old('name')}}" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">BORN DATE</label>
                         <input type="date" class="form-control" id="exampleInputEmail1" name="date"
-                            aria-describedby="emailHelp" required>
+                            aria-describedby="emailHelp" value="{{old('date')}}" required>
                     </div>
                     <label for="exampleInputEmail1" class="form-label">GENDER</label>
                     <div class="mb-3">
@@ -46,7 +46,7 @@
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">ADDRESS</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" name="address"
-                            aria-describedby="emailHelp" required>
+                            aria-describedby="emailHelp" value="{{old('address')}}" required>
                     </div>
                     <button type="submit" class="btn btn-primary me-2">Submit</button>
                     <a href="{{ route('GetDataMahasiswa') }}" class="btn btn-danger">Cancel</a>

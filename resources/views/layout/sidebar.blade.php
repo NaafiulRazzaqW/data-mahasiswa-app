@@ -19,7 +19,7 @@
                     <div class="accordion accordion-flush " id="accordionFlushParent">
                         <div class="accordion-item ">
                             <div class="accordion-header " id="flush-headingOne">
-                                <button class="nav-link accordion-button collapsed d-flex align-items-center bg-light"
+                                <button class="nav-link accordion-button collapsed d-flex align-items-center bg-light {{Request::is('admin/student*') || Request::is('admin/city*') ? 'text-primary' : 'text-black'}}"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                     aria-expanded="false" aria-controls="flush-collapseOne"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"

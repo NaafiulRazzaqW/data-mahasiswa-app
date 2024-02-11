@@ -4,7 +4,7 @@
     <div class="p-5 d-flex justify-content-center">
         <div class="card shadow" style="width: 70%">
             <div class="card-body">
-                <h5 class="card-title fs-4"><b>Form Add Data City</b></h5>
+                <h5 class="card-title fs-4"><b>Form Edit Data City</b></h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary mb-3">all data must be filled in correctly!</h6>
                 <form action="{{ route('submitEditDataCity', $data->id) }}" method="POST">
                     @csrf

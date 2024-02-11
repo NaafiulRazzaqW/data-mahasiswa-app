@@ -10,7 +10,7 @@
                 </svg>
                 <div class="d-flex-column">
                     <h5 class="fw-bold card-title">Male Students</h5>
-                    <p class="card-text fw-semibold">{{ $data[0] }}</p>
+                    <p class="card-text fw-semibold">{{ $data[0] ?? '0' }}</p>
                 </div>
 
             </div>
@@ -24,7 +24,7 @@
                 </svg>
                 <div class="d-flex-column">
                     <h5 class="fw-bold card-title">Female Students</h5>
-                    <p class="card-text fw-semibold">{{ $data[1] }}</p>
+                    <p class="card-text fw-semibold">{{ $data[1] ?? '0' }}</p>
                 </div>
 
             </div>
@@ -63,6 +63,16 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+    {{-- modal test --}}
+    <!-- Button trigger modal -->
+
+  
 @endsection
 
 @section('script')
