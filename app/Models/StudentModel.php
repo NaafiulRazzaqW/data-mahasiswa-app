@@ -16,4 +16,9 @@ class StudentModel extends Model
     {
         return $this->belongsTo(AdminModel::class, 'admin_id', 'id');
     }
+
+    public function city()
+    {
+        return $this->belongsTo(CityModel::class, 'city_id', 'id');
+    }
 }

@@ -13,17 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <link href="{{ asset('css/datatables.min.css') }}" rel="stylesheet">
+
+    <script src="{{ asset('js/datatables.min.js') }}"></script>
     <!-- Styles -->
 
 </head>
 
 <body class="antialiased poppins bg-secondary-subtle h-100 overflow-x-hidden">
 
-   @yield('content')
-   @yield('script')
+    @yield('content')
+
 </body>
 
 </html>
